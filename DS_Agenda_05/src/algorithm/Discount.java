@@ -28,7 +28,11 @@ public class Discount {
     public Discount(float value) {
 
         setValue(value);
-        verification_01();
+
+        Positive_Value verification_01 = new Positive_Value(getValue());
+        setValue(verification_01.getValue());
+
+
         verification_02();
     }
 
@@ -42,30 +46,9 @@ public class Discount {
         console.print("Total: "); System.out.println(getTotal());
 
     }
-    public void verification_01() {
-
-        setValidation(getValue() <= getZero());
-        while (getValidation()) {
-
-            console.header();
-            console.print("ERRO! ");
-
-            setValidation(getValue() == getZero());
-            if (getValidation()) {
-
-                console.print("Value ZERO is not permited: ");
-            } else {
-                console.print("Value NEGATIVE is not permited: ");
-            }
-
-            value = scan.nextFloat();
-            setValue(value);
-
-            setValidation(getValue() <= getZero());
-        }
-
-    }
-
+    
+   
+   
     public void verification_02() {
 
         console.header();
