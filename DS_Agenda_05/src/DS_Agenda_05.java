@@ -1,6 +1,7 @@
 package DS_Agenda_05.src;
 
 import java.util.Scanner;
+
 import DS_Agenda_05.src.algorithm.Console;
 import DS_Agenda_05.src.algorithm.Discount;
 
@@ -21,6 +22,7 @@ public class DS_Agenda_05 {
 
 
 
+        console.space();
         scan.close();
     }
     
