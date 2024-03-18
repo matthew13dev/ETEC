@@ -1,4 +1,4 @@
-package DS_Agenda_05.src.algorithm;
+package DS_Agenda_05.src.Class;
 
 import java.util.Scanner;
 

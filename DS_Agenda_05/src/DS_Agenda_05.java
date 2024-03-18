@@ -2,8 +2,8 @@ package DS_Agenda_05.src;
 
 import java.util.Scanner;
 
-import DS_Agenda_05.src.algorithm.Console;
-import DS_Agenda_05.src.algorithm.Shopping;
+import DS_Agenda_05.src.Class.Console;
+import DS_Agenda_05.src.Class.Shopping;
 
 public class DS_Agenda_05 {
    
