@@ -1,13 +1,6 @@
 package DS_Agenda_05.src.algorithm;
 
-import java.util.Scanner;
-
 public class Discount {
-
-    // Imports
-
-    Console console = new Console();
-    Scanner scan = new Scanner(System.in);
 
     private static final float FIVE_PERCENT = 0.05f;
     private static final float TEN_PERCENT = 0.1f;
@@ -15,7 +8,6 @@ public class Discount {
 
     private static final float VALOR200 = 200f;
     private static final float VALOR300 = 300f;
-    private static final float ZERO = 0f;
 
     private float value = 0f;
     private float discount = 0f;
@@ -23,35 +15,13 @@ public class Discount {
     private String text = "none";
     private Boolean validation = true;
 
-    // Constructor
+    Console console = new Console();
 
     public Discount(float value) {
+        console.header();
+
 
         setValue(value);
-
-        Positive_Value verification_01 = new Positive_Value(getValue());
-        setValue(verification_01.getValue());
-
-
-        verification_02();
-    }
-
-    // Methods
-
-    public void status(){
-
-        console.header();
-        console.print("Value: "); System.out.println(getValue());
-        console.print(getText()); System.out.println(getDiscount());
-        console.print("Total: "); System.out.println(getTotal());
-
-    }
-    
-   
-   
-    public void verification_02() {
-
-        console.header();
 
         setValidation(getValue() >= getValor300());
 
@@ -80,6 +50,8 @@ public class Discount {
         setTotal(getValue() - getDiscount());
     }
 
+
+
     // Constants
 
     private static float getFivePercent() {
@@ -100,10 +72,6 @@ public class Discount {
 
     private static float getValor300() {
         return VALOR300;
-    }
-
-    private static float getZero() {
-        return ZERO;
     }
 
     // Variables
@@ -132,7 +100,7 @@ public class Discount {
         this.total = total;
     }
 
-    private String getText() {
+    public String getText() {
         return text;
     }
 

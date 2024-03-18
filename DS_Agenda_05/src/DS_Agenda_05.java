@@ -3,7 +3,7 @@ package DS_Agenda_05.src;
 import java.util.Scanner;
 
 import DS_Agenda_05.src.algorithm.Console;
-import DS_Agenda_05.src.algorithm.Discount;
+import DS_Agenda_05.src.algorithm.Shopping;
 
 public class DS_Agenda_05 {
    
@@ -17,8 +17,9 @@ public class DS_Agenda_05 {
         console.print("Enter a value: ");
         float value = scan.nextFloat();
 
-        Discount market = new Discount(value);
-        market.status();
+        Shopping shop = new Shopping(value);
+
+        shop.status();
 
 
 

@@ -35,10 +35,15 @@ public class Positive_Value {
                 console.print("Value NEGATIVE is not permited: ");
             }
 
-            setValue(scan.nextFloat());
+            value = scan.nextFloat();
+            setValue(value);
+
+
             setValidation(getValue() <= getZero());
         }
+
     }
+
 
     // Getters and Setters
 
@@ -50,7 +55,7 @@ public class Positive_Value {
         return value;
     }
 
-    private void setValue(float value) {
+    public void setValue(float value) {
         this.value = value;
     }
 
