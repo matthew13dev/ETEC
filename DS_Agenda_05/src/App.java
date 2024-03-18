@@ -30,8 +30,7 @@ public class App {
 
         } catch (NumberFormatException e) {
 
-            String erro = String.format(" Somente numero! [%s]", aux);
-            System.out.println(erro);       
+            System.out.format(" Somente numero! [%s]", aux);   
 
         }
 
