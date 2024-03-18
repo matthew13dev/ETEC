@@ -13,7 +13,7 @@ public class Discount {
     private float discount = 0f;
     private float total = 0f;
     private String text = "none";
-    private Boolean validation = true;
+    private Boolean validation = false;
 
     Console console = new Console();
 
