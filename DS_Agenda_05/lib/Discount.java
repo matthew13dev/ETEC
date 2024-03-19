@@ -1,4 +1,4 @@
-package DS_Agenda_05.src.Class;
+package DS_Agenda_05.lib;
 
 public class Discount {
 

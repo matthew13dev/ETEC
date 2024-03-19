@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-import DS_Agenda_05.src.Class.Console;
-import DS_Agenda_05.src.Class.Shopping;
+import DS_Agenda_05.lib.Console;
+import DS_Agenda_05.lib.Shopping;
 
 public class App {
 
