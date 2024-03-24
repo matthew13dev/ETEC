@@ -20,10 +20,10 @@ public class DS_Agenda_07 {
         String mensage = String.format("DS_Agenda_07 \n Matheus Henrique da Silva Mendes");
         JOptionPane.showMessageDialog(null, mensage);
 
-        for (int i = 0; i < ATENDIMENTO.USERS.length; i++) {
+        for (int i = 0; i < Atendimento.USERS.length; i++) {
             String string_To_Integer = "none";
 
-            String text = String.format("Pessoa: %d//%d", i+1, ATENDIMENTO.PARTICIPANTES);
+            String text = String.format("Pessoa: %d//%d", i+1, Atendimento.PARTICIPANTES);
             JOptionPane.showMessageDialog(null, text);
 
             name = JOptionPane.showInputDialog("Informe o seu nome: ");
@@ -31,28 +31,28 @@ public class DS_Agenda_07 {
             string_To_Integer = JOptionPane.showInputDialog("Informe a sua idade: ");
             age = Integer.parseInt(string_To_Integer);
 
-            ATENDIMENTO.USERS[i] = name;
+            Atendimento.USERS[i] = name;
             full_Age = full_Age + age;
 
             mensage="Selecione o nivel de atendimento abaixo: \n";
 
-            for (int a = 0; a < ATENDIMENTO.ATENDIMENTOS.length; a++) {
-                mensage = mensage + String.format("[%d] %s\n", a, ATENDIMENTO.ATENDIMENTOS[a]);
+            for (int a = 0; a < Atendimento.ATENDIMENTOS.length; a++) {
+                mensage = mensage + String.format("[%d] %s\n", a, Atendimento.ATENDIMENTOS[a]);
                 
             }
 
             string_To_Integer = JOptionPane.showInputDialog(null, mensage);
             select = Integer.parseInt(string_To_Integer);
 
-            if (select == ATENDIMENTO.EXECELENTE) {
+            if (select == Atendimento.EXECELENTE) {
                 size_Execelente++;
 
             } else {
-                if (select == ATENDIMENTO.BOM) {
+                if (select == Atendimento.BOM) {
                     size_Bom++;
 
                 } else {
-                    if (select == ATENDIMENTO.RUIM) {
+                    if (select == Atendimento.RUIM) {
                         size_Ruim++;
 
                     } else {
@@ -64,7 +64,7 @@ public class DS_Agenda_07 {
 
         }
 
-        double media = full_Age / ATENDIMENTO.PARTICIPANTES;
+        double media = full_Age / Atendimento.PARTICIPANTES;
 
         mensage = String.format("-----------------------------------------------------\n Resultado da pesquisa:\n Exelente: %d \n Bom: %d \n Ruim %d \n ----------------------------------------------------- \n Media das idades: %f", 
         size_Execelente, size_Bom, size_Ruim, media);
@@ -73,8 +73,8 @@ public class DS_Agenda_07 {
 
         mensage = String.format("Participantes:\n");
 
-        for(int i = 0; i < ATENDIMENTO.USERS.length; i++){
-            mensage = mensage + String.format("[%d] %s\n", i, ATENDIMENTO.USERS[i]);
+        for(int i = 0; i < Atendimento.USERS.length; i++){
+            mensage = mensage + String.format("[%d] %s\n", i, Atendimento.USERS[i]);
         }
 
         JOptionPane.showMessageDialog(null, mensage);

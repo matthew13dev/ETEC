@@ -1,4 +1,4 @@
-public class ATENDIMENTO {
+public class Atendimento {
     static final int EXECELENTE = 0;
     static final int BOM = 1;
     static final int RUIM = 2;
