@@ -1,6 +1,6 @@
 package DS_Agenda_08.src;
 
-public enum OPINIONS {
+public enum NOTAS {
 
     OTIMO(0),
     BOM(1),
@@ -8,10 +8,15 @@ public enum OPINIONS {
     RUIM(3),
     PESSIMO(4);
 
+    private static int size = 5;
+
+    public static int getSize() {
+        return size;
+    }
 
     public int code;
 
-    OPINIONS(int code){
+    NOTAS(int code){
         this.code = code;
     }
 
