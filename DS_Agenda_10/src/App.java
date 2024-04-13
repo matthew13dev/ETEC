@@ -1,10 +1,6 @@
-import java.security.SecureRandom;
-
 public class App {
     public static void main(String[] args) throws Exception {
        
-        SecureRandom random = new SecureRandom();
-    
         int row = 3;
         int collumn = 3;
 
@@ -14,16 +10,22 @@ public class App {
         for(int x = 0; x < row; x++){
 
             for(int y = 0; y < collumn; y++){
-                
-                numbers[x][y] =  random.nextInt(100);
-                System.out.printf("%d ",numbers[x][y]);
-
+                numbers[x][y] = Integer.parseInt(Messages.enter_InputNumber());
                 total = total + numbers[x][y];
             }
-            System.out.printf("%n");
         }
 
-        System.out.printf("-------------%ntotal: %d",total);
+        String results = String.format("Results:%n");
+        for(int x = 0; x < row; x++){
 
+            for( int y = 0; y < collumn; y++){
+               int value = numbers[x][y];
+               results = results + String.format(" %d", value);
+            }
+           results = results + String.format("%n");
+        }
+
+        results = results + String.format("total: %d",total);
+        Messages.printrResults(results);
     }
 }
