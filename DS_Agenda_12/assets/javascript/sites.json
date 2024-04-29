@@ -1,17 +1,22 @@
 [
     {
-        "title": "Amazon",
-        "image": "./images/amazon.png",
+        "name": "ETEC",
+        "link": "https://eadtec.cps.sp.gov.br/index.php?msg=Voc%EA%20precisa%20estar%20logado%20para%20acessar%20o%20ambiente%20virtual"
+    },
+    {
+        "name": "Amazon",
         "link": "https://www.amazon.com.br/?&tag=hydrbrabk-20&ref=pd_sl_7rwd1q78df_e&adgrpid=155790195778&hvpone=&hvptwo=&hvadid=677606588104&hvpos=&hvnetw=g&hvrand=4190491845635614858&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100188&hvtargid=kwd-10573980&hydadcr=26346_11691057&gad_source=1"
     },
     {
-        "title": "YouTube",
-        "image": "./images/youtube.jpg",
+        "name": "YouTube",
         "link": "https://www.youtube.com/"
     },
     {
-        "title": "OLX",
-        "image": "./images/olx.jpg",
-        "link": "https://www.olx.com.br/"
+        "name": "Google Translate",
+        "link": "https://translate.google.com/"
+    },
+    {
+        "name": "Stack Overflow",
+        "link": "https://stackoverflow.com/"
     }
 ]

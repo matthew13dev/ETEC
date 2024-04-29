@@ -1,34 +1,29 @@
-const readSites = () => {
+function siteForm() {
+    const form_Element = document.getElementById("siteForm");
 
-    const url = "sites.json";
-    fetch(url).then((promise) => {
-        let objects = JSON.parse(promise)
-        return objects;
-    }).then((json) => {
+    document.getElementById("submit").addEventListener("click", (submit) => {
 
-        const sites = document.getElementById("sites");
+        submit.preventDefault();
 
-        for (let i = 0; i < json.lenght; i++) {
-            let siteObject = i;
+        const formData = new FormData(form_Element);
+        const siteObject = Object.fromEntries(formData);
 
-            const link = document.createElement("a");
-            link.setAttribute("target", "_blank");
-            link.setAttribute("href", siteObject.link)
-
-            const card = document.createElement("div");
-            card.setAttribute("class", "card");
-
-            const image = document.createElement("img");
-            image.src = siteObject.image;
-            image.alt = siteObject.title;
-
-            link.appendChild(image);
-            card.appendChild(link);
-            sites.appendChild(card);
-        }
-
+        console.log(siteObject);
+        addSite(siteObject);
     })
 }
 
+function addSite(siteObjtec) {
+    const list_Element = document.getElementById("siteList");
+    const itemList_Element = document.createElement("li");
 
-readSites();
+    const link_Element = document.createElement("a");
+    link_Element.setAttribute("href", siteObjtec.link)
+    link_Element.innerHTML = siteObjtec.name;
+    link_Element.setAttribute("target", "_blank")
+
+    itemList_Element.appendChild(link_Element);
+    list_Element.appendChild(itemList_Element);
+}
+
+siteForm();
