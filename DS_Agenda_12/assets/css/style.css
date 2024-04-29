@@ -182,9 +182,11 @@ input {
     outline: none;
 }
 
-button {
+form button {
     width: 120px;
     padding: 10px;
+    display: block;
+    align-self: self-start;
 
     background-color: #ccc;
     border: none;
@@ -192,7 +194,7 @@ button {
     transition: all 0.05s linear;
 }
 
-button:hover {
+form button:hover {
     background-color: #ddd;
     cursor: pointer;
 }

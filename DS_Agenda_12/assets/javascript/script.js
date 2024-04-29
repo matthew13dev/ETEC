@@ -1,16 +1,26 @@
 function siteForm() {
     const form_Element = document.getElementById("siteForm");
 
-    document.getElementById("submit").addEventListener("click", (submit) => {
+    form_Element.addEventListener("click", (submit) => {
 
         submit.preventDefault();
 
         const formData = new FormData(form_Element);
         const siteObject = Object.fromEntries(formData);
 
-        console.log(siteObject);
-        addSite(siteObject);
+        if(siteObject.name != "" && siteObject.link != ""){
+            addSite(siteObject);
+        }
     })
+}
+
+function readSites() {
+    const url = "./assets/javascript/Sites.json"
+    fetch(url).then(response => response.json()).then(siteArray => {
+
+            const list_Element = document.getElementById("siteList");
+            siteArray.map(addSite)
+        })
 }
 
 function addSite(siteObjtec) {
@@ -27,3 +37,4 @@ function addSite(siteObjtec) {
 }
 
 siteForm();
+readSites();
