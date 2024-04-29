@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Amazon",
+        "image": "./images/amazon.png",
+        "link": "https://www.amazon.com.br/?&tag=hydrbrabk-20&ref=pd_sl_7rwd1q78df_e&adgrpid=155790195778&hvpone=&hvptwo=&hvadid=677606588104&hvpos=&hvnetw=g&hvrand=4190491845635614858&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100188&hvtargid=kwd-10573980&hydadcr=26346_11691057&gad_source=1"
+    },
+    {
+        "title": "YouTube",
+        "image": "./images/youtube.jpg",
+        "link": "https://www.youtube.com/"
+    },
+    {
+        "title": "OLX",
+        "image": "./images/olx.jpg",
+        "link": "https://www.olx.com.br/"
+    }
+]
