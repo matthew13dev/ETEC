@@ -1,0 +1,5 @@
+Tecnologias utilizadas:
+html -> estruturação da oágina web.
+css -> design.
+javascript -> controle do formulario para adicionar novos sites e carregar sites já existentes no arquivo json.
+json -> arquivo de texto padrão para ser utilizada em APIs
