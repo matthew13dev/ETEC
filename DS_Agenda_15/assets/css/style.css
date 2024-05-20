@@ -19,6 +19,7 @@ body {
 .sidebar--header {
     width: 100%;
     height: 50px;
+    position: fixed;
 
     z-index: 99;
     background-color: orange;
