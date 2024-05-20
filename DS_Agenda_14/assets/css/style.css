@@ -1,0 +1,91 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    padding: inherit;
+}
+
+.button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: white;
+    margin: 30px;
+    transition: all 0.05s linear;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+header {
+    height: 50px;
+    background-color: white;
+    box-shadow: 1px 0px 5px #ccc;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: inherit;
+}
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.05s linear;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 30px 0px;
+}
+
+.pontos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.card {
+    max-width: 300px;
+    max-height: 400px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    box-shadow: 0px 0px 2px #ccc;
+    transition: all 0.05s linear;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px #999;
+}
+.card h1 {
+    font-size: 30px;
+}
