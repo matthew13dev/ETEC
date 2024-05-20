@@ -14,14 +14,15 @@
 </head>
 
 <body  id="body">
+    <header class="sidebar--header">
+        <button class="menu--logo--active" id="menu--logo" onclick="buttonActive()">
+            <i class="material-symbols-outlined">Menu</i>
+            <h4>Menu</h4>
+        </button>
+    </header> 
     <aside class="sidebar" id="sidebar">
 
-        <header class="sidebar--header">
-            <button class="menu--logo--active" id="menu--logo" onclick="buttonActive()">
-                <i class="material-symbols-outlined">Menu</i>
-                <h4>Menu</h4>
-            </button>
-        </header> 
+       
 
         <nav id="menu--areas">
             <button>
@@ -68,7 +69,7 @@
         </nav>
     </aside>
 
-    <main class="main" id="main">
+    <main class="main" id="main" onclick="menuOff()">
         <div class="container">
             <h1>Sistema Acadêmico</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id libero, rem dolore eius est minus, tenetur

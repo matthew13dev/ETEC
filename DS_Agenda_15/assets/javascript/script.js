@@ -6,20 +6,30 @@ function buttonActive() {
 
         document.getElementById("menu--areas").style.display = "none";
         document.getElementById("sidebar").style.width = "70px";
-        document.getElementById("main").style.marginLeft = "70px";
-        document.querySelector(".sidebar").style.borderRight = "0"
         menu_button.setAttribute("class", "menu--logo");
+        document.getElementById("sidebar").style.borderRight = "#999";
 
     }
     else {
         document.getElementById("menu--areas").style.display = "flex";
-        menu_button.setAttribute("class", "menu--logo--active")
         document.getElementById("sidebar").style.width = "240px";
-        document.querySelector(".sidebar").style.borderRight = "1px solid #2f3336"
+        document.getElementById("sidebar").style.borderRight = "1px solid #999";
 
-        document.getElementById("main").style.marginLeft = "240px";
+        menu_button.setAttribute("class", "menu--logo--active")
         
     }
+}
 
-    console.log(atribute);
+function menuOff() {
+     const menu_button = document.getElementById("menu--logo");
+    let atribute = menu_button.getAttribute("class");
+
+    if (atribute === "menu--logo--active") {
+
+        document.getElementById("menu--areas").style.display = "none";
+        document.getElementById("sidebar").style.width = "70px";
+        menu_button.setAttribute("class", "menu--logo");
+        document.getElementById("sidebar").style.borderRight = "#999";
+
+    }
 }
