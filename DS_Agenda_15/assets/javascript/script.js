@@ -1,9 +1,8 @@
 
-
 function buttonActive() {
     const menu_button = document.getElementById("menu--logo");
     let atribute = menu_button.getAttribute("class");
-    
+
     if (atribute === "menu--logo--active") {
         openMenu();
     }
@@ -18,6 +17,7 @@ function openMenu() {
 
     document.getElementById("sidebar").style.width = "240px";
     menu_button.setAttribute("class", "menu--logo");
+
     document.querySelector("main").style.marginLeft = "240px";
 }
 
@@ -27,6 +27,7 @@ function closeMenu() {
 
     document.getElementById("sidebar").style.width = "0px";
     menu_button.setAttribute("class", "menu--logo--active")
+
     document.querySelector("main").style.marginLeft = "0px";
 }
 
@@ -36,10 +37,8 @@ function menuOff() {
 
     if (atribute === "menu--logo--active") {
 
-        document.getElementById("menu--areas").style.display = "none";
-        document.getElementById("sidebar").style.width = "70px";
+        document.getElementById("sidebar").style.width = "0px";
         menu_button.setAttribute("class", "menu--logo");
-        document.getElementById("sidebar").style.borderRight = "#999";
 
     }
 }

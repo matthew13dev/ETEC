@@ -2,8 +2,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
-    ---border: 1px solid red;
 }
 
 button {
@@ -12,8 +10,8 @@ button {
 
 body {
     font-family: sans-serif;
-    background-color: #fff;
-    color: #2f3336;
+    background-color: #2f3336;
+    color: #fff;
 
     overflow-x: hidden;
 }
@@ -24,7 +22,7 @@ body {
     position: fixed;
 
     z-index: 99;
-    background-color: orange;
+    background-color: #3da6f7;
     color: #fff;
     position: fixed;
     top: 0;
@@ -70,7 +68,7 @@ body {
     transition: all 0.2s linear;
     overflow: hidden;
 
-    background-color: orange;
+    background-color: #3da6f7;
 }
 
 
@@ -105,6 +103,7 @@ body {
     line-height: 4;
 
     cursor: pointer;
+    flex-wrap: nowrap;
 }
 
 .sidebar nav button i {
@@ -138,6 +137,16 @@ body {
     transition: all 0.35s;
     display: flex;
     flex-direction: column;
+}
+
+
+
+
+main {
+    background-color: black;
+}
+#home--content img{
+    width: 100%;
 }
 
 @media (max-width: 920px) {
