@@ -2,17 +2,22 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+
+    list-style: none;
 }
 
 button {
     font-weight: lighter;
 }
 
+.title--content {
+    color: #2784cc;
+    width: auto;
+    height: 50px;
+}
+
 body {
     font-family: sans-serif;
-    background-color: #2f3336;
-    color: #fff;
-
     overflow-x: hidden;
 }
 
@@ -22,7 +27,7 @@ body {
     position: fixed;
 
     z-index: 99;
-    background-color: #3da6f7;
+    background-color: #125385;
     color: #fff;
     position: fixed;
     top: 0;
@@ -62,13 +67,13 @@ body {
     width: 0;
     height: 100%;
     padding: 40px 10px 30p 10px;
-    width: 0;
+    width: -1;
     border-right: 1px solid transparent;
 
     transition: all 0.2s linear;
     overflow: hidden;
 
-    background-color: #3da6f7;
+    background-color: #125385;
 }
 
 
@@ -124,31 +129,214 @@ body {
 
 
 .main {
-    margin-top: 50px;
     width: 100%;
+    height: 100%;
     transition: all 0.35s;
-    padding: 30px 10px;
-
 }
 
-.main .container {
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
     width: 900px;
-    margin: auto;
-    transition: all 0.35s;
+    margin: 30px auto;
+    padding: 30px 0px;
+}
+
+#home--content {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+
+    background-color: #2f3336;
+    color: #fff;
 }
 
-
-
-
-main {
-    background-color: black;
-}
-#home--content img{
+#home--content img {
     width: 100%;
+    scale: 0.7;
 }
 
+#home--content .image1 {
+    width: 100%;
+    scale: 0.4;
+    margin-bottom: -60px;
+}
+
+#about--content {
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #fff;
+    color: #2f3336;
+}
+
+#about--content .box {
+    width: 100%;
+    height: inherit;
+    margin: 20px 0px;
+    box-shadow: 1px 1px 5px #125385;
+    padding: 30px 60px;
+}
+
+#about--content ul li {
+    margin: 10px 0px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    list-style: none;
+    transition: all 0.05s linear;
+}
+
+#about--content ul li:hover {
+    background-color: #125385;
+    color: #fff;
+}
+
+
+#about--content .box2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+    height: inherit;
+    margin: 20px 0px;
+    box-shadow: 1px 1px 5px #125385;
+    padding: 30px 60px;
+}
+
+#about--content .box2 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #125385;
+}
+
+#about--content .box2 .item:last-child {
+    border-right: 1px solid #125385;
+}
+
+
+#grade--content {
+    background-color: #ffffff;
+    color: #2f3336;
+}
+
+#grade--content .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+#grade--content .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    border: 1px solid #2784cc;
+    margin: 30px 0px;
+    transition: all 0.05s linear;
+}
+
+#grade--content .item:hover {
+    transform: scale(1.01);
+}
+
+#grade--content .item h3 {
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    background-color: #2784cc;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+#grade--content .item ul {
+    width: 100%;
+    text-align: center;
+}
+
+#grade--content .item ul li {
+    padding: 10px;
+    width: 100%;
+    transition: all 0.05s;
+}
+
+#grade--content .item ul li:hover {
+    background-color: #125385;
+    color: #fff;
+}
+
+#grade--content .total {
+    width: 100%;
+    height: 50px;
+    background-color: #125385;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+#grade--content .total h3 {
+    background-color: transparent;
+}
+
+#grade--content .total h5 {
+    background-color: transparent;
+}
+
+
+#mercado--content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#mercado--content .title--content {
+    border-bottom: 1px solid #2784cc;
+}
+
+#mercado--content p {
+    line-height: 35px;
+    width: 90%;
+    margin:0px;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+#mercado--content .consulta {
+    margin: 20px 0px;
+}
+
+#mercado--content .consulta h3 {
+    color: #2784cc;
+}
+#mercado--content ul,
+#mercado--content li {
+    padding: 5px 0px;
+    list-style: disc;
+ }
 @media (max-width: 920px) {
     .sidebar {
         width: 70px;
