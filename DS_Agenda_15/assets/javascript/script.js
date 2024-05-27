@@ -45,3 +45,22 @@ function menuOff() {
         element_main.style.marginLeft = "0px";
     }
 }
+
+function navBar(idTag){
+
+    document.getElementById("home--content").style.display = "none";
+    document.getElementById("about--content").style.display = "none";
+    document.getElementById("grade--content").style.display = "none";
+    document.getElementById("docentes--content").style.display = "none";
+    document.getElementById("mercado--content").style.display = "none";
+    document.getElementById("tecnologias--content").style.display = "none";
+    document.getElementById("contato--content").style.display = "none";
+    
+
+   document.getElementById(idTag).style.display = "flex";
+}
+
+function defultáge(){
+    document.getElementById("home--content").style.display = "flex";
+}
+defultáge();

@@ -25,49 +25,49 @@
 
 
         <nav id="menu--areas">
-            <button id="home--button">
+            <button id="home--button" onclick="navBar('home--content')">
                 <div class="home">
                     <i class="material-symbols-outlined">Home</i>
                     <h4>Home</h4>
                 </div>
             </button>
 
-            <button id="sobre--button">
+            <button id="sobre--button" onclick="navBar('about--content')">
                 <div class="sobre">
                     <i class="material-symbols-outlined">Person</i>
                     <h4>Sobre</h4>
                 </div>
             </button>
 
-            <button id="grade--button">
+            <button id="grade--button" onclick="navBar('grade--content')">
                 <div class="grade--curicular">
                     <i class="material-symbols-outlined">Table</i>
                     <h4>Grade Curricular</h4>
                 </div>
             </button>
 
-            <button id="docentes--button">
+            <button id="docentes--button" onclick="navBar('docentes--content')">
                 <div class="docentes">
                     <i class="material-symbols-outlined">group</i>
                     <h4>Docentes</h4>
                 </div>
             </button>
 
-            <button id="mercado--button">
+            <button id="mercado--button" onclick="navBar('mercado--content')">
                 <div class="mercado--de--trabalho">
                     <i class="material-symbols-outlined">Work</i>
                     <h4>Mercado de Trabalho</h4>
                 </div>
             </button>
 
-            <button id="tecnologias--button">
+            <button id="tecnologias--button" onclick="navBar('tecnologias--content')">
                 <div class="tecnologias">
                     <i class="material-symbols-outlined">Devices</i>
                     <h4>Tecnologias</h4>
                 </div>
             </button>
 
-            <button id="contato--button">
+            <button id="contato--button" onclick="navBar('contato--content')">
                 <div class="contato">
                     <i class="material-symbols-outlined">Mail</i>
                     <h4>Contato</h4>
@@ -78,15 +78,14 @@
 
     <main class="main" id="main" onclick="menuOff()">
 
-        <div id="home--content" class="content">
+        <section id="home--content" class="hidden">
             <div class="container">
                 <img class="image1" src="assets/images/logoCab.png" alt="">
                 <img src="assets/images/logoDS.png" />
             </div>
+        </section>
 
-        </div>
-
-        <div id="about--content" class="content">
+        <section id="about--content" class="hidden">
             <div class="container">
 
                 <h1 class="title--content">Sobre o Curso</h1>
@@ -120,9 +119,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories" target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
 
-        <div id="grade--content" class="content">
+        <section id="grade--content" class="hidden">
             <div class="container">
                 <h1 class="title--content">Desenvolvimento de Sistemas</h1>
                 <div class="box">
@@ -182,9 +186,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories" target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
 
-        <div id="docentes--content" class="content">
+        <section id="docentes--content" class="hidden">
             <div class="container">
                 <h1 class="title--content">Docentes</h1>
                 <div class="grid">
@@ -249,9 +258,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories" target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
 
-        <div id="mercado--content" class="content">
+        <section id="mercado--content" class="hidden">
             <div class="container">
                 <h1 class="title--content">Mercado de Trabalho</h1>
                 <div class="text">
@@ -303,9 +317,14 @@
                     </ul>
                 </div>
             </div>
-        </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories" target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
        
-        <div id="tecnologias--content" class="content">
+        <section id="tecnologias--content" class="hidden">
             <div class="container">
                 <h1 class="title--content">Tecnologias</h1>
                 <ul>
@@ -317,9 +336,14 @@
                     <li><img src="assets/images/sql.png" alt="sql"></li>
                 </ul>
             </div>
-        </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories" target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
 
-        <div id="contato--content" class="content">
+        <section id="contato--content" class="hidden">
             <div class="container">
                 <h1 class="title--content">Contato</h1>
                 <div class="box">
@@ -348,7 +372,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories" target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
     </main>
 </body>
 
