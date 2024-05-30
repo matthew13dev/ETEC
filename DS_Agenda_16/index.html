@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS_Agenda_15</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/script.js" defer></script>
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body id="body">
+    <header class="sidebar--header">
+        <button class="menu--logo--active" id="menu--logo" onclick="buttonActive()">
+            <i class="material-symbols-outlined">Menu</i>
+            <h4>Menu</h4>
+        </button>
+    </header>
+    <aside class="sidebar" id="sidebar">
+
+
+
+        <nav id="menu--areas">
+            <button id="home--button" onclick="navBar('home--content')">
+                <div class="home">
+                    <i class="material-symbols-outlined">Home</i>
+                    <h4>Home</h4>
+                </div>
+            </button>
+
+            <button id="sobre--button" onclick="navBar('about--content')">
+                <div class="sobre">
+                    <i class="material-symbols-outlined">Person</i>
+                    <h4>Sobre</h4>
+                </div>
+            </button>
+
+            <button id="grade--button" onclick="navBar('grade--content')">
+                <div class="grade--curicular">
+                    <i class="material-symbols-outlined">Table</i>
+                    <h4>Grade Curricular</h4>
+                </div>
+            </button>
+
+            <button id="docentes--button" onclick="navBar('docentes--content')">
+                <div class="docentes">
+                    <i class="material-symbols-outlined">group</i>
+                    <h4>Docentes</h4>
+                </div>
+            </button>
+
+            <button id="mercado--button" onclick="navBar('mercado--content')">
+                <div class="mercado--de--trabalho">
+                    <i class="material-symbols-outlined">Work</i>
+                    <h4>Mercado de Trabalho</h4>
+                </div>
+            </button>
+
+            <button id="tecnologias--button" onclick="navBar('tecnologias--content')">
+                <div class="tecnologias">
+                    <i class="material-symbols-outlined">Devices</i>
+                    <h4>Tecnologias</h4>
+                </div>
+            </button>
+
+            <button id="contato--button" onclick="navBar('contato--content')">
+                <div class="contato">
+                    <i class="material-symbols-outlined">Mail</i>
+                    <h4>Contato</h4>
+                </div>
+            </button>
+        </nav>
+    </aside>
+
+    <main class="main" id="main" onclick="menuOff()">
+
+        <section id="home--content" class="hidden">
+            <div class="container">
+                <img class="image1" src="assets/images/logoCab.png" alt="">
+                <img src="assets/images/logoDS.png" />
+            </div>
+        </section>
+
+        <section id="about--content" class="hidden">
+            <div class="container">
+
+                <h1 class="title--content">Sobre o Curso</h1>
+                <div class="box">
+                    <h3>O curso tem objetivo de capacitar o aluno para:</h3>
+                    <ul>
+                        <li>Desenvolver e operar sistemas, aplicações e interfaces gráficas;</li>
+                        <li>Montar e realizar manutenção em estruturas de banco de dados;</li>
+                        <li>Codificar programas, projetar, implantar e customizar sistemas de aplicações;</li>
+                        <li>Selecionar programas de aplicação e sistemas operacionais, a partir da avaliação das
+                            necessidades do usuário;</li>
+                        <li>Agir de forma a minimizar osriscos inerentes à segurança de informações, relacionando
+                            e aplicando soluções adequadas;</li>
+                        <li>Identificar as oportunidades e as tendências no mundo digital.</li>
+                    </ul>
+                </div>
+                <div class="box2">
+                    <div class="item">
+                        <h3>1200+ Aulas</h3>
+                        <h5>Aula</h5>
+                    </div>
+
+                    <div class="item">
+                        <h3>1000+ Aulas</h3>
+                        <h5>Aulas Práticas</h5>
+                    </div>
+
+                    <div class="item">
+                        <h3>Certificado</h3>
+                        <h5>Reconhecido pelo MEC</h5>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories"
+                            target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
+
+        <section id="grade--content" class="hidden">
+            <div class="container">
+                <h1 class="title--content">Desenvolvimento de Sistemas</h1>
+                <div class="box">
+                    <div class="item">
+                        <h3>1º Módulo</h3>
+                        <ul>
+                            <li>Linguagem, Trabalho e Tecnologia;</li>
+                            <li>Programação e Algoritmos;</li>
+                            <li>Banco de Dados I;</li>
+                            <li>Análise e Projeto de Sistemas;</li>
+                            <li>Design Digital;</li>
+                            <li>Programação Web I;</li>
+                            <li>Fundamentos da Informática;</li>
+                            <li>Técnicas de Programação.</li>
+                        </ul>
+                        <div class="total">
+                            <h3>Total</h3>
+                            <h5>400/h semestre</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>2º Módulo</h3>
+                        <ul>
+                            <li>Inglês Instrumental;</li>
+                            <li>Desenvolvimento de Sistemas;</li>
+                            <li>Banco de Dados II;</li>
+                            <li>Internet e Protocolos</li>
+                            <li>Programação de Aplicativos Mobile I;</li>
+                            <li>Programação Web II;</li>
+                            <li>Planejamento do Trabalho de Conclusão
+                                de Curso (TCC).
+                            </li>
+                        </ul>
+                        <div class="total">
+                            <h3>Total</h3>
+                            <h5>400/h semestre</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>3º Módulo</h3>
+                        <ul>
+                            <li>Segurança de Sistemas de Informação;</li>
+                            <li>Banco de Dados III;</li>
+                            <li>Sistemas Embarcados;</li>
+                            <li>Programação de Aplicativos Mobile II;</li>
+                            <li>Programação Web III;</li>
+                            <li>Qualidade e Teste de Software;</li>
+                            <li>Ética e Cidadania Organizacional;</li>
+                            <li>Desenvolvimento do Trabalho de Conclusão de Curso (TCC).</li>
+                        </ul>
+                        <div class="total">
+                            <h3>Total</h3>
+                            <h5>400/h semestre</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories"
+                            target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
+
+        <section id="docentes--content" class="hidden">
+            <div class="container">
+                <h1 class="title--content">Docentes</h1>
+            </div>
+            <div class="slider">
+                <div class="slider--control">
+                    <div class="container">
+                        <div class="slider--button behind">behind</div>
+                        <div class="slider--button after">after</div>
+                    </div>
+                </div>
+                <div class="slider---width">
+                    <div class="slider--item">
+                        <img src="assets/images/m.png" alt="">
+                        <div class="curriculo">
+                            <h3>Francisca Amendoa Carvalho</h3>
+                            <h5>Formação Acadêmica</h5>
+                            <p>
+                                Graduada em Processamento de Dados pela Faculdade de São Paulo(1998). <br> Mestre em
+                                Computação pelo centro Universitário São Luiz.
+                            </p>
+                            <h5>Atuação Profissional</h5>
+                            <p>
+                                Professora Titular da Faculdade de Educação de Maringa.<br>Experiência na área de
+                                Educação.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slider--item">
+                        <img src="assets/images/h.png" alt="">
+                        <div class="curriculo">
+                            <h3>Marcio Soares</h3>
+                            <h5>Formação Acadêmica</h5>
+                            <p>
+                                Graduado em Ciência da Computação pela Universidade Federal de São Carlos(2009). <br>
+                                Mestre em Computação pelo centro Universitário São Luiz.
+                            </p>
+                            <h5>Atuação Profissional</h5>
+                            <p>
+                                Mestre em Ciência da Computação pela Universidade Federal de São Carlos(2017). <br>
+                                Mestre em Computação pelo centro Universitário São Luiz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories"
+                            target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
+
+        <section id="mercado--content" class="hidden">
+            <div class="container">
+                <h1 class="title--content">Mercado de Trabalho</h1>
+                <div class="text">
+                    <p>Tecnologia da Informação (T.I.), como, por exemplo, a Associação Brasileira das Empresas de
+                        Tecnologia da Informação e Comunicação (BRASSCOM), que em uma entrevista realizada pelo
+                        Jornal da Globo, foi divulgado pelo presidente da empresa, Sérgio Sgobbi, que em 2015 a área
+                        da Tecnologia da Informação (T.I.) registrou uma alta de mais de 8% em oportunidades de
+                        emprego e a tendência para os demais anos é crescer gradativamente.
+                    </p>
+                    <p>
+                        Além disso, em apresentação ocorrida durante o seminário “Governo e o setor de TI - Garantia
+                        de Ino- vação, Produtividade e Segurança”, em Brasília, a expectativa era de que no segundo
+                        semestre de 2015, o setor de TI tivesse um crescimento nos investimentos da ordem de 7% a
+                        7,5%, incluindo hardware, software e serviços.
+                    </p>
+                    <p>
+                        Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no
+                        mercado de TI do Brasil. Esta mesma pesquisa aponta que a Indústria Brasileira de TI permanece
+                        em 7º lugar no ranking mundial e em 1° lugar no Ranking da América Latina em 2015, com um
+                        investimento de US$ 2,2 trilhões (crescimento em 9,2% em relação a 2014), sendo que US$ 14,3
+                        bilhões(crescimento de 8,2%)somente no setor Serviços de T.I. e US$ 12,3 bilhões (crescimento
+                        em 30,2%) no setor de softwares.
+                    </p>
+                    <p>
+                        A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a
+                        região Sudeste foi a que mais teve participação total nos investimentos em hardware, software
+                        e serviços, com 60,67%”.
+                    </p>
+                </div>
+                <div class="consulta">
+                    <h3>Fotos de Consultas</h3>
+                    <ul>
+                        <li>
+                            Associação Brasileira das Empresas de Software. Disponível em:
+                            <a href="http://www.abessoftware.com.br/"
+                                target="_blank">http://www.abessoftware.com.br/.</a>
+                            Acesso em 15 Ago. 2017.
+                        </li>
+                        <li>
+                            International Data Corporation. Disponível em
+                            <a href="http://br.idclatin.com" target="_blank">http://br.idclatin.com</a>.
+                            Acesso em 15 Ago. 2017.
+                        </li>
+                        <li>
+                            CENTRO PAULA SOUZA. Missão, Visão, Objetivos e Diretrizes. Disponível em:
+                            <a href="www.cps.sp.gov.br" target="_blank">www.cps.sp.gov.br</a>.
+                            Acesso em: 12 Mar. 2015.
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories"
+                            target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
+
+        <section id="tecnologias--content" class="hidden">
+            <div class="container">
+                <h1 class="title--content">Tecnologias</h1>
+                <ul>
+                    <li><img src="assets/images/html5.png" alt="html"></li>
+                    <li><img src="assets/images/css3.png" alt="css"></li>
+                    <li><img src="assets/images/Java.png" alt="java"></li>
+                    <li><img src="assets/images/Csharp.png" alt="csharp"></li>
+                    <li><img src="assets/images/php.png" alt="php"></li>
+                    <li><img src="assets/images/sql.png" alt="sql"></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories"
+                            target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
+
+        <section id="contato--content" class="hidden">
+            <div class="container">
+                <h1 class="title--content">Contato</h1>
+                <div class="box">
+                    <div class="box1">
+                        <ul>
+                            <li><img src="assets/images/location.png" alt="map">São Paulo, Brasil</li>
+                            <li><img src="assets/images/mail.png" alt="map">Telefone (11) 3333-3333</li>
+                            <li><img src="assets/images/call.png" alt="map">Email: ds@etec.sp.gov.br</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <form action="">
+                            <h3>Entre em contato:</h3>
+                            <label>
+                                <input type="text" placeholder="Name">
+                            </label>
+                            <label>
+                                <input type="email" placeholder="Email">
+                            </label>
+                            <label>
+                                <textarea name="mensagem" placeholder="Escreva aqui."></textarea>
+                            </label>
+
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <h4>Pagina web feita por <a href="https://github.com/matthew13dev?tab=repositories"
+                            target="_blank">Matheus Henrique</a></h4>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
