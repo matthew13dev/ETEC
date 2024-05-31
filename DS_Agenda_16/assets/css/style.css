@@ -18,7 +18,6 @@ button {
 
 body {
     font-family: sans-serif;
-    overflow-x: hidden;
 }
 
 .sidebar--header {
@@ -316,54 +315,70 @@ section {
     background-color: transparent;
 }
 
+
+
+
+
+--DOCENTES
 #docentes--content {
-    display: block;
+    display: fle;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-}
-#docentes--content .title--content{
-    position: absolute;
 }
 
 #docentes--content .slider{
-    height: 100%;
-    width: 100%;
+    height: 450px;
+    width: 800px;
+    margin: auto;
     overflow: hidden;
-    text-align: center;
+    border: 2px solid #2784cc;
 }
 
-#docentes--content .slider--control .container {
+
+#docentes--content .slider--control {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 100%;
-    height: 400px;
-    padding: 0px 100px;
+    height: 450px;
+    width: inherit;
 }
-
-#docentes--content .slider--width {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 200%;
+#docentes--content .slider--width{
+    height: inherit;
+    width: 100%;
+    display: flex;  
     margin-left: 0;
 }
 
-#docentes--content .slider .slider--item {
+#docentes--content .slider--button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #2784cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.05s;
+    cursor: pointer;
+    color: #2784cc;
+}
+
+#docentes--content .slider--button:hover {
+    background-color: #2784cc;
+    color: #fff;
+}
+
+
+#docentes--content .slider--item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    width: 700px;
+    height: 450px;
 
     transition: all 0.05s linear;
     margin: auto;
-    padding: 50px;
-    border: 1px solid transparent;
-}
-
-#docentes--content .slider .slider--item:hover {
-    border: 1px solid #2784cc;
 }
 
 #docentes--content img {
@@ -385,7 +400,7 @@ section {
 }
 
 #docentes--content h5 {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #docentes--content p {
