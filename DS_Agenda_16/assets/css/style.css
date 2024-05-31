@@ -54,6 +54,7 @@ body {
     overflow: hidden;
 
     background-color: #125385;
+    z-index: 99;
 }
 
 .sidebar:hover {

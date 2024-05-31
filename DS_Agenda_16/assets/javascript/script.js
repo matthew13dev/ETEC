@@ -25,17 +25,28 @@ const sliderSetings = {
     },
 
     width: function () {
-        this.widthElement.style.width = `calc(100% * ${this.elements.itemsElements.length}`
+        this.elements.widthElement.style.width = `calc(100% * ${this.elements.itemsElements.length}`
     },
 
-    behindEvent: function () {
+   behindEvent: function () {
         document.querySelector(".behind").addEventListener("click", ()=>{
-            alert("behind!")
+            
+            if(this.elements.widthElement.style.marginLeft === "0%"){
+                this.elements.widthElement.style.marginLeft = "-100%";
+            }
+            else {
+                this.elements.widthElement.style.marginLeft = "0%";
+            }
         })
     },
     afterEvent: function () {
         document.querySelector(".after").addEventListener("click", ()=>{
-            alert("afeter!")
+            if(this.elements.widthElement.style.marginLeft === "-100%"){
+                this.elements.widthElement.style.marginLeft = "0%";
+            }
+            else {
+                this.elements.widthElement.style.marginLeft = "-100%";
+            }
         })
         
     }
