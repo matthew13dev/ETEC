@@ -30,26 +30,9 @@ body {
     color: #fff;
     position: fixed;
     top: 0;
-}
-
-.sidebar--header button {
-    width: 240px;
-    height: inherit;
-    padding: 10px;
-
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-
-    background-color: transparent;
-    border: 0;
-
-    transition: all 0.1s;
-    cursor: pointer;
-    z-index: 99;
-
-    gap: 10px;
-    color: inherit;
 }
 
 .sidebar--header button:hover {
@@ -63,16 +46,18 @@ body {
     top: 0;
     display: flex;
     flex-direction: column;
-    width: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
     height: 100%;
-    padding: 40px 10px 30p 10px;
-    width: -1;
-    border-right: 1px solid transparent;
-
     transition: all 0.2s linear;
     overflow: hidden;
 
     background-color: #125385;
+}
+
+.sidebar:hover {
+    width: 240px;
 }
 
 
@@ -83,8 +68,8 @@ body {
     justify-content: start;
     align-items: start;
     width: inherit;
-    flex: 1 1 auto;
-    z-index: 1;
+    height: 100%;
+    z-index: 99;
 
     background-color: inherit;
     color: #fff;
@@ -93,7 +78,7 @@ body {
 
 .sidebar button,
 .sidebar nav button div {
-    width: inherit;
+    width: 240px;
     background-color: transparent;
     border: 0;
     font-family: inherit;
@@ -119,6 +104,9 @@ body {
     background-color: #2f3336;
 }
 
+.sidebar nav button h4 {
+    margin-left: 20px;
+}
 .sidebar button h4,
 .sidebar button i {
     font-weight: lighter;
@@ -129,7 +117,8 @@ body {
 
 
 .main {
-    width: 100%;
+    width: calc(100% - 60px);
+    margin-left: 60px;
     height: 100%;
     transition: all 0.35s;
     display: flex;
@@ -362,6 +351,8 @@ section {
     transition: all 0.05s;
     cursor: pointer;
     color: #2784cc;
+
+    z-index: 88;
 }
 
 #docentes--content .slider--button:hover {
